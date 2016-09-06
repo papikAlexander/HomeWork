@@ -8,29 +8,19 @@ import java.util.Scanner;
 public class _03Extra {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter = ");
         int number = sc.nextInt();
-        int num = number;
-        int num2;
-        int n = 0;
+        int counter = 0;
+        int digit;
 
-        for (int i = 0; i <= 50; i++){
-            num /= 10;
-            n++;
-            if(num == 0){
-                break;
-            }
+        while(number != 0){
+            digit = number % 10;
+            if(digit == 8)
+                counter++;
+            number /= 10;
         }
-        int k=0;
-        for(int i = n; i > 0; i--){
-            num2 = number / ((int)Math.pow(10, i-1));
-            number %= ((int)Math.pow(10, i-1));
-            if (num2 == 8){
-                k++;
-            }
-        }
-        System.out.println(k);
+        System.out.println(counter);
     }
 }
