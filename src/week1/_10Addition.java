@@ -16,11 +16,13 @@ public class _10Addition {
         System.out.print("Day = ");
         int day = sc.nextInt();
         double price;
+        double hourCost = 200;
+        double discount = 0.8;
 
         if (day == 7 || day == 6) {
-            price = time * 200 * 0.8;
+            price = time * hourCost * discount;
         } else {
-            price = time * 200;
+            price = time * hourCost;
         }
 
         System.out.println("Your price: " + price + " UAN");
