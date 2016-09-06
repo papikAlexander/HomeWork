@@ -10,7 +10,7 @@ public class _01Extra {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter des  = ");
+        System.out.print("Enter a decimal number = ");
         int des = sc.nextInt();
         int res;
         int result = 0;
@@ -24,7 +24,7 @@ public class _01Extra {
         }
         System.out.println("Result: " + result);
 
-        System.out.print("Enter dvoich  = ");
+        System.out.print("Enter a binary number = ");
         int dv = sc.nextInt();
         int result2 = 0;
 
