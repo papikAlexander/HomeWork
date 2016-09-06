@@ -14,12 +14,10 @@ public class _03Addition {
 
         if (piece1 == piece2 && piece1 == piece3){
             System.out.println("Numbers the same");
-        } else {
-            if (piece1 == piece2 || piece1 == piece3 || piece2 == piece3){
+        } else if(piece1 == piece2 || piece1 == piece3 || piece2 == piece3){
                 System.out.println("Two numbers the same");
-            } else{
+        } else {
                 System.out.println("Numbers not same");
-            }
         }
     }
 }
