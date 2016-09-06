@@ -15,18 +15,12 @@ public class _04Extra {
         int res = 0;
         int res2 = 1;
         if (n == 0 || n == 1) {
-            if (n == 0)
-            System.out.println("ф = " + n);
-            if (n == 1)
-            System.out.println("ф = " + n);
+           fibonacci = n;
         } else {
-            for (int i = 2; i <= 100; i++){
+            for (int i = 2; i > n; i++){
                 fibonacci = res + res2;
                 res = res2;
                 res2 = fibonacci;
-                if (n == i){
-                    break;
-                }
             }
         }
         System.out.println("ф = " + fibonacci);
