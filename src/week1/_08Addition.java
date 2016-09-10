@@ -12,9 +12,10 @@ public class _08Addition {
 
         System.out.print("Price = ");
         double price = sc.nextDouble();
+        double discount = 0.9;
 
         if (price > 1000){
-            System.out.println("Discount price = " + (price * 0.9));
+            System.out.println("Discount price = " + (price * discount));
         }else{
             System.out.println("No discounts. Price = " + price);
         }
