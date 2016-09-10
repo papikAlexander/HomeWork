@@ -12,18 +12,13 @@ public class _12Addition {
         System.out.print("Скрость ветра = ");
         int speed = sc.nextInt();
 
-        if(speed >=1 && speed < 5){
+        if(speed >= 1 && speed < 5){
             System.out.println("Скорость ветра " + speed + " м/с,  слабый ветер");
-        }
-
-        if(speed >= 5 && speed < 9){
+        } else if(speed >= 5 && speed < 9){
             System.out.println("Скорость ветра " + speed + " м/с, умеренный ветер");
-        }
-
-        if(speed >= 9 && speed < 18){
+        } else if(speed >= 9 && speed < 18){
             System.out.println("Скорость ветра "+ speed + " м/с, сильный ветер");
-        }
-        if(speed > 19){
+        } else {
             System.out.println("Скорость ветра " + speed + " м/с, ураган");
         }
     }
